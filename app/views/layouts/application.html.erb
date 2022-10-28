@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CONVERT.ME</title>
+    <%= stylesheet_link_tag "application", media: "all",
+  "data-turbolinks-track" => true %>
+    <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+    <%= javascript_include_tag "//www.google.com/jsapi", "chartkick" %>
+    <%= csrf_meta_tags %>
+
+  </head>
+
+  <body>
+    <%= render 'layouts/header' %>
+    <div class="container my-5">
+      <div class="bg-light p-5 rounded">
+        <div class="col-sm-8 py-5 mx-auto">
+          <%= yield %>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
